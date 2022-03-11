@@ -77,7 +77,15 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
-        <footer></footer>
+        <footer class="main container mx-auto p-3">
+            <h4 class="text-danger">How does javascript work?</h1>
+            <p><strong>Ans:</strong> The programmers can write or link javascript code in the html document. Web clients such as google chrome, mozilla firefox or others read the html document line by line and execute the codes. Web clients has javascript interpreter as well. When web clients encounter javascript codes inside the script tags then interpret the codes using javascript interpreter. The interpreter runs the codes instructions by instructions.</p>
+            <h4 class="text-danger">What does event loop in Javascript do?</h1>
+            <p><strong>Ans:</strong> Javascript event loop is a while loop. It may have a task to complete. If depends on response of some asynchronous request, then javascript interpreter can take commands for the next user interaction. But javascript interpreter does not attempt to complete the next order. It is like run to finish. So, javascript waits for the previous tasks to finish and then executes the next tasks. Therefore, if the first task involved several other function calls, then the sequence is not broken and those are run to completion. In the meantime, javascript receives the new user interaction commands and puts them in the queue and executes them on first come first serve manner after the first is complete.</p>
+            <h4 class="text-danger">What are differences between Local Storage and Session Storage?</h1>
+            <p><strong>Ans:</strong> Session storage data is only persistant for a current webpage for that tab only. If a new tab is opened with that same webpage URL then that creates a new session storage. That is not linked to the previous one. Once a tab is closed then the session storage data is deleted. But on the other hand localstorage data is persistant over all visits to a webpage and over all sessions unless explicitly deleted. Therefore, localstorage is used for long term use and session storage is used only to save data for short term use. One example of session storage is saving user id and password for current user when the user is logged in from a shared computer. Therefore, the next person using the computer will not have access to the previous persons user account. On the other hand localstorage may be used for users with a personal computer so that the user does not need to re-login every time the user visits the webpage.</p>
+
+        </footer>
 
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>
